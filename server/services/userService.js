@@ -82,7 +82,7 @@ module.exports.updateUserProfile = async serviceData => {
         lastName: serviceData.body.lastName
       },
       { new: true }
-    )
+    ) 
 
     if (!user) {
       throw new Error('User not found!')
